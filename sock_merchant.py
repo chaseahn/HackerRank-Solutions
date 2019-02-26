@@ -20,20 +20,13 @@ ar: the colors of each sock
 import sys
 
 def sockMerchant(n, ar):
-
     ar.sort()
     ar.append('$')
-
-    i = 0
-    count = 0
-
+    i, count = 0, 0
     while i < n:
-
         if ar[i] == ar[i+1]:
             count += 1
             i += 2
-            
         else:
             i += 1
-
     return count
