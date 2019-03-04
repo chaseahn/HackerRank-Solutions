@@ -1,3 +1,5 @@
+#!/bin/python3
+
 '''
 Given a 6x6 2D Array, arr:
 
