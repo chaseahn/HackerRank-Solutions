@@ -29,7 +29,7 @@ We calculate the following 16 hourglass values:
 -10, 0, 28, 23, 
 -27, -11, -2, 10, 
 9, 17, 25, 18
-Our highest hourglass value is 18 from the hourglass:
+Our highest hourglass value is 28 from the hourglass:
 
 0 4 3
   1
@@ -45,3 +45,27 @@ hourglassSum has the following parameter(s):
 arr: an array of integers
 
 '''
+
+
+def hourglassSum(arr):
+
+    highestGlass = 0
+    #horizontal matricies
+    for x in range(len(arr)-2):
+        #vertical matricies
+        for y in range(len(arr)-2):
+            #get top hourglass
+            top = arr[x][y] + arr[x][y+1] + arr[x][y+2]
+            #get middle hourglass
+            mid = arr[x+1][y+1]
+            #get bottom hourglass
+            bot = arr[x+2][y] + arr[x+2][y+1] + arr[x+2][y+2]
+
+            currentGlass = top + mid + bot
+            
+            if highestGlass < currentGlass:
+                highestGlass = currentGlass
+
+    return highestGlass
+                
+
