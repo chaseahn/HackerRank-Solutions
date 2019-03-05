@@ -1,1 +1,12 @@
-# hacker_rank_solutions
+# HackerRank Solutions
+
+### Warm Ups
+1) Sock Merchant
+2) Counting Valleys
+3) Jumping Clouds
+4) Repeated String
+
+### Arrays
+1) 2D Array
+2) Left Rotation
+3) New Years Bribe
