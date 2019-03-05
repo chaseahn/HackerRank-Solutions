@@ -10,3 +10,6 @@
 1) 2D Array
 2) Left Rotation
 3) New Years Bribe
+
+### Dictionaries 
+1) Ransom Note
